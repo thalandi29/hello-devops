@@ -7,13 +7,13 @@ pipeline {
  
   environment {
     // Your Docker Hub username — change this!
-    DOCKERHUB_USERNAME = 'YOUR_DOCKERHUB_USERNAME'
+    DOCKERHUB_USERNAME = 'thalandi299'
     IMAGE_NAME         = 'hello-devops'
     // BUILD_NUMBER is automatically set by Jenkins (1, 2, 3, ...)
     IMAGE_TAG          = "${DOCKERHUB_USERNAME}/${IMAGE_NAME}:${BUILD_NUMBER}"
     IMAGE_LATEST       = "${DOCKERHUB_USERNAME}/${IMAGE_NAME}:latest"
     // Your GitOps repo — change this!
-    GITOPS_REPO        = 'https://github.com/YOUR_USERNAME/hello-devops-k8s.git'
+    GITOPS_REPO        = 'https://github.com/thalandi29/hello-devops-k8s.git'
   }
  
   stages {
