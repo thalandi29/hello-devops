@@ -78,6 +78,7 @@ pipeline {
         )]) {
           sh '''
             # Clone the GitOps repo
+            rm -rf /tmp/gitops
             git clone https://${GIT_USER}:${GIT_PASS}@github.com/${GIT_USER}/hello-devops-k8s.git /tmp/gitops
             cd /tmp/gitops
             
