@@ -83,7 +83,7 @@ pipeline {
             cd /tmp/gitops
             
             # Update the image tag in deployment.yaml
-            sed -i "s|image: .*hello-devops:.*|image: ${IMAGE_TAG}|g" hello-devops-k8s/deployment.yaml
+            sed -i "s|image: .*hello-devops:.*|image: ${IMAGE_TAG}|g" deployment.yaml
             
             # Commit and push
             git config user.email 'jenkins@ci.local'
