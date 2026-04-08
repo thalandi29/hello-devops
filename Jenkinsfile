@@ -88,7 +88,7 @@ pipeline {
             # Commit and push
             git config user.email 'jenkins@ci.local'
             git config user.name 'Jenkins CI'
-            git add deployment.yaml
+            git add app/deployment.yaml
             git commit -m "CI: Update image to build ${BUILD_NUMBER}"
             git push
             
